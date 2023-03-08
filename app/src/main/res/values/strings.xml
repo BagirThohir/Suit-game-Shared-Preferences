@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Challenge 5 Game Suit</string>
+    <string name="paper">Kertas</string>
+    <string name="scissors">Gunting</string>
+    <string name="rock">Batu</string>
+    <string name="vs">VS</string>
+    <string name="player">Player</string>
+    <string name="cpu">CPU</string>
+    <string name="welcome">Selamat Datang</string>
+    <string name="close">Tutup</string>
+    <string name="player_1">Pemain 1</string>
+    <string name="player_2">Pemain 2</string>
+    <string name="title_first_landing_page">Bermain suit melawan \n sesama pemain.</string>
+    <string name="title_second_landing_page">Bermain suit melawan \n komputer.</string>
+    <string name="title_third_landing_page">Tuliskan nama mu dibawah</string>
+    <string name="pick_your_opponent">PILIH LAWANMU</string>
+    <string name="player_vs_player">Pemain vs Pemain</string>
+    <string name="player_vs_cpu">Pemain vs CPU</string>
+    <string name="username">Username</string>
+    <string name="result_game">hasil permainan</string>
+    <string name="play_again">Main Lagi</string>
+    <string name="back_to_menu">Kembali Ke Menu</string>
+</resources>

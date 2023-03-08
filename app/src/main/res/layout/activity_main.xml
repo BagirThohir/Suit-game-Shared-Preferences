@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/img_splash_screen1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_close"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:src="@mipmap/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_playaer_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/comic_sans"
+        android:text="TextView"
+        android:textColor="@color/color_blue"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+    <TextView
+        android:id="@+id/tv_other_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/comic_sans"
+        android:text="TextView"
+        android:textColor="@color/color_blue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_rock_player_1"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/rock"
+        android:src="@mipmap/ic_rock"
+        app:layout_constraintEnd_toEndOf="@+id/tv_playaer_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_playaer_1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_paper_player_1"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@mipmap/ic_paper"
+        android:contentDescription="@string/paper"
+        app:layout_constraintEnd_toEndOf="@+id/img_rock_player_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_rock_player_1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_scissors_player_1"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@mipmap/ic_scissors"
+        android:contentDescription="@string/scissors"
+        app:layout_constraintEnd_toEndOf="@+id/img_paper_player_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_paper_player_1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_rock_player_2"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@string/rock"
+        android:src="@mipmap/ic_rock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_other_player"
+        app:layout_constraintTop_toBottomOf="@+id/tv_other_player" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_paper_player_2"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="24dp"
+        android:src="@mipmap/ic_paper"
+        android:contentDescription="@string/paper"
+        app:layout_constraintEnd_toEndOf="@+id/img_rock_player_2"
+        app:layout_constraintStart_toStartOf="@+id/img_rock_player_2"
+        app:layout_constraintTop_toBottomOf="@+id/img_rock_player_2" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_scissors_player_2"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:src="@mipmap/ic_scissors"
+        android:contentDescription="@string/scissors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/img_paper_player_2"
+        app:layout_constraintTop_toBottomOf="@+id/img_paper_player_2" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oleoscript_bold"
+        android:rotation="-10"
+        android:text="@string/vs"
+        android:textColor="@color/color_red"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toStartOf="@+id/img_paper_player_2"
+        app:layout_constraintStart_toEndOf="@+id/img_paper_player_1"
+        app:layout_constraintTop_toTopOf="@+id/img_paper_player_2" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_refresh"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:src="@mipmap/ic_refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
